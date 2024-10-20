@@ -11,7 +11,7 @@ This python script assumes you've used [exportify](https://github.com/watsonbox/
 If you're using a different method, you'll probably end up with a differently formatted file.
 In which case, you'll need to create your own `load_spotify_playlist` function.
 
-You also need to go through the setup instructions for [ytmusicapi](https://ytmusicapi.readthedocs.io/en/latest/setup.html) to make an auth file.
+You also need to go through the setup instructions for [ytmusicapi](https://ytmusicapi.readthedocs.io/en/stable/setup/index.html) to make an auth file.
 If you're having trouble with this, [my blog post](https://dev.to/dizzyspi/creating-a-spotify-to-youtube-music-playlist-converter-f39) on making the code in this repo might be helpful to you.
 
 # How to use this script
