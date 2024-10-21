@@ -46,6 +46,44 @@ optional arguments:
                         Music playlist
 ```
 
+# Extended help by i6c
+
+citing this api docs https://ytmusicapi.readthedocs.io/en/stable/setup/browser.html
+
+
+First all you need to do is go to youtube music and search for something with your network tab open. Look for a request that has "browser" in the URL path (preferably using  firefox) and rightclick the request tab itself, then go to copy > request headers. Then activate your venv and all of that, install ytmusicapi via pip and run `ytmusicapi browser`
+
+It will ask you to put the request headers all you gotta do is right click then press ctrl + D it should look something like this
+
+```
+{
+    "accept": "*/*",
+    "accept-encoding": "gzip, deflate",
+    "accept-language": "en-US,en;q=0.5",
+    "alt-used": "music.youtube.com",
+    "authorization": " ",
+    "connection": "keep-alive",
+    "content-encoding": "gzip",
+    "content-type": "application/json",
+    "cookie": "very long string ......................................................................",
+    "dnt": "1",
+    "origin": "https://music.youtube.com",
+    "priority": "u=0",
+    "referer": "https://music.youtube.com/search?q=example",
+    "user-agent": "ua",
+    "x-goog-authuser": "0",
+    "x-goog-visitor-id": "id_%3D%3D",
+    "x-origin": "https://music.youtube.com",
+    "x-youtube-bootstrap-logged-in": "true",
+    "x-youtube-client-name": "67",
+    "x-youtube-client-version": "1.00"
+}
+```
+
+if your json file looks something similar to that you should be good to continue and clone this project. then run this code in your console to get the program to run properly
+
+`python3 main.py -p NAME YOU WANT THE PLAYLIST TO BE CALLED ON YOUTUBE -d YOUTUBE PLAYLIST DESCRIPTION browser.json path/to/exported/playlist.csv`
+
 # Examples
 
 Takes all the songs in liked.csv and adds them to your liked songs in YouTube Music.
